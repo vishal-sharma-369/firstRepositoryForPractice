@@ -186,6 +186,17 @@ error.log                       will ignore error.log file
 dirname/                        will ignore all specific directory with name dirname and its contents
 the directory may be in some other folder also 
 
+/dirname/                       will ignore only the outher folder or directory with name dirname and its contents 
+
+static/dirname                  will ignore only the directories with name dirname inside the static folder
+
 git by default ignores blank folders and the folders containing untracked directories(i.e. the directories which are listed in .gitignore file)
 
+
+lecture 8:
+
+displaying changes between commits / staging area:
+
+git diff          : compares working directory with the staging area
+git diff --staged : compares previous commit with the present staging area
 
