@@ -165,4 +165,27 @@ as we have staged them for the first time then instead of saying that staged let
 after changing files again 
 the git status will show the file in staging area and untracked area both
  
- 
+
+lecture 7:
+Ignoring Files in Git:
+
+command for creating blank files in Git
+touch filename.extension
+e.g. touch error.log
+
+touch .gitignore
+
+
+we can either use
+git add --a
+git add .
+
+files with their names inside .gitignore files will get ignored
+error.log                       will ignore error.log file
+*.log                           will ignore all the files ending with .log
+dirname/                        will ignore all specific directory with name dirname and its contents
+the directory may be in some other folder also 
+
+git by default ignores blank folders and the folders containing untracked directories(i.e. the directories which are listed in .gitignore file)
+
+
