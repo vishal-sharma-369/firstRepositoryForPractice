@@ -252,3 +252,18 @@ git log --pretty=format:"%h --%an"  will %h is the hash and %ae is the author na
 if you want to merge a particular change to a particular commit and also the message for that commit
 git commit --amend
 note: the changed file must be in unmodified region i.e. you must add it in staged area first 
+
+
+
+lecture 12:
+
+unstaging and unmodifying files in Git:
+
+git restore --staged first_renamed.txt
+
+Here the file will go from unmodified section to the modified section only not the untracked section
+to stop tracking the file
+git rm --cached filename
+
+
+
