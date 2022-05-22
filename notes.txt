@@ -164,5 +164,5 @@ git add --a
 as we have staged them for the first time then instead of saying that staged let us say that we have unmodified the files
 after changing files again 
 the git status will show the file in staging area and untracked area both
-
-
+ 
+ 
