@@ -1,0 +1,167 @@
+git is so popular because using copy paste will consume a lot of data in your harddisk
+
+git is a version control system
+a version control system is a system which helps us to track our files
+ - easily recover files
+ - who introduced an issue and when
+ - roll back to previous working stage
+ 
+History of version control system:
+local vcs - DB to keep track of files
+		pros - can track files and roll back
+		cons - if you lose your harddisk , everything will be lost
+
+Centralized VCS - centralized server to keep track of all the files
+		pros - can track files and roll back
+		cons - if server is lost older versions might be lost
+
+Distributed VCS - everybody has all the history or backup 
+		pros - 
+git is a distributed VCS
+
+How was git created?
+ans: Linux kernel
+1991 - 2002 : 
+2002 : Bitkeeper           --> 2005   freee of charge status lost
+GIT : Linux kernel
+GITHUB: website to host git repositories
+GITLab: websites to host git repositories
+
+git captures snapshots
+git is very fast
+.git folder keeps track of all the files
+Almost every operation is local
+
+local - operations on your own computer
+remove - operations on internet
+
+git has integrity
+git uses checksum - to verify if the file you downloaded is original or not
+git generally only adds data
+
+
+
+Q. What is git bash?
+ans. git bash is a terminal like cmd powershell etc.
+we can also fire git from powershell. just type in git.
+
+Git installation - Git command line tool
+		   Git bash(terminal program)
+
+terminal always work under a directory 
+to change the directory you can use the change directory  == cd command
+e.g. cd /c
+	cd /d
+	cd c:
+	cd d:
+we can't change the directory to the current directory
+ if you are in a directory . Then all the directories inside that directory can be directly accessed using their name . but if you want to go back . Then you have to give the complete path from /c or /d to that specific directory. 
+the path can be of the form /c/x/git
+/d/x/git
+"/c/x/git"
+"/d/x/git"
+
+cd hello/
+
+we can use terminals to work with git repositories and we can also use some gui to do the same work 
+gui helps to do the same work in an easy manner
+
+while working on powershell 
+the above statements can be written as : 
+cd "c:"
+cd "d:"
+cd "c:x/git"
+cd "d:x/git"
+cd d:
+cd c:
+
+git config --global user.name "vishal"
+git confit --global user.email "vishalsharma....E@gmail.com"
+
+git uses linux commands / paths
+
+git config --list
+
+git config user.name
+git config user.email
+
+
+lecture 3:
+
+Git : three stage architecture
+                   Local operations
+working directory        staging area      git directory(repository)
+
+
+
+
+index.html    stage       commit
+engine.js
+index.css     stage       commit
+
+working directory: the way you see the files in your file explorer is the working directory
+staging area : it is those set of files which we want to go to the next snapshot
+git directory: it is a .git named hidden file which contains all the files in compressed form
+and it also contains older versions .
+
+
+
+lecture 4: 
+
+git status : gives initial status of the git repository
+
+git init : initializes a new git repository
+a new .git folder is also created which is hidden
+
+on branch master : branch  by default is master
+
+git add --a  : add all the files to the staging area
+
+git commit -m "Initial commit"      : to commit all the files in the staging area to the git repository
+
+git log  : gives a track or data of all the commits
+
+git add first.txt : to add only a specific file to the staging area
+here first.txt is the name of our file
+
+
+if you do 
+git init  again then it will reinitialize your directory
+
+Q. what does reinitializing your git repository mean ? Search it on google?
+
+
+
+lecture 5:
+cloning a git repository from GitHub
+
+
+to stop tracking a folder or directory and you want to delete all the git repository then the command is:
+rm -rf .git
+it is a command in linux which deletes all the contents of a folder and here .git is our folder where all
+the git repository content is stored
+
+
+git clone url
+git clone url userDefinedNameForTheDirectory
+
+this will create a new folder or new directory inside your git repository folder 
+
+pwd : gives the present working directory
+ls : list the contents of the folder in which you are currently on
+
+
+
+lecture 6:
+
+File Status Lifecycle
+
+untracked         unmodified      modified         staged
+
+
+after init or change in a file  ->>untracked
+git add --a 
+as we have staged them for the first time then instead of saying that staged let us say that we have unmodified the files
+after changing files again 
+the git status will show the file in staging area and untracked area both
+
