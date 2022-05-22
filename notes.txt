@@ -217,3 +217,38 @@ git rm filename
 to rename a file and also stage it then:
 git mv first.txt firstrenamed.txt
 
+if we add a tracked file or folder in a .gitignore file . the file or folder is still tracked . so we have to explicitly stop tracking the file . the command to do so is:
+git rm --cached file/foldername
+
+Q. please check the avove command for folders?
+
+
+to stop tracking a file :
+git rm --cached filename
+
+
+
+lecture 11:
+Viewing and Changing Commits In Git:
+
+
+you can clone a new repository in your directory even if your working directory is not a git repository
+
+different ways of viewing commits:
+git log
+git log -p                          will also show diff
+git log -p -2                       will show last 2 commits with diff
+git log --stat                      will show all the commits with short summary about commit diff
+git log --pretty=oneline            will show all the commits with description in just one line
+git log --pretty=short              will show commit author and message
+git log --pretty=full               will show commit author commitor and message
+git log --since=2.days              will show all the commits in previous 2 days
+git log --since=2.weeks             will show all the commits in previous 2 weeks
+git log --since=2.months            will show all the commits in previous 2 months
+git log --since=2.years             will show all the commits in previous 2 years
+git log --pretty=format:"%h --%an"  will %h is the hash and %ae is the author name
+                                    %ae is the author email             git scm
+
+if you want to merge a particular change to a particular commit and also the message for that commit
+git commit --amend
+note: the changed file must be in unmodified region i.e. you must add it in staged area first 
