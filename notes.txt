@@ -203,4 +203,17 @@ git diff --staged : compares previous commit with the present staging area
 
 lecture 9:
 skipping the staging area:
+git commit -a -m"message"             -- > directly commit all the modified files but will not commit the untracked files
+
+
+lecture 10:
+Moving and Renaming Files in Git:
+
+if you delete and restore a file the git status will show clear working directory
+
+to remove a file and also stage it then: 
+git rm filename
+
+to rename a file and also stage it then:
+git mv first.txt firstrenamed.txt
 
