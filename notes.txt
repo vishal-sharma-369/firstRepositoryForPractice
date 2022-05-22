@@ -265,5 +265,13 @@ Here the file will go from unmodified section to the modified section only not t
 to stop tracking the file
 git rm --cached filename
 
+if you modified a file by mistake and you want to restore the previous version of that file 
+
+git checkout --first_renamed.txt
+
+if you want to remove all the changes in all the files and want to return to the previous committed directory stage:
+
+git checkout -f
 
 
+lecture 13:
