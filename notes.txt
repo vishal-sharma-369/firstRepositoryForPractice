@@ -200,3 +200,7 @@ displaying changes between commits / staging area:
 git diff          : compares working directory with the staging area
 git diff --staged : compares previous commit with the present staging area
 
+
+lecture 9:
+skipping the staging area:
+
